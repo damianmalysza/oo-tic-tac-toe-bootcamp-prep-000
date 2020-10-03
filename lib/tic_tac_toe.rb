@@ -38,5 +38,9 @@ def position_taken?(index)
   end
 end
 
+def move(index,token)
+  board[index]=token
+end
+
 
 end
