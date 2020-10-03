@@ -30,5 +30,13 @@ def valid_move?(input)
   !position_taken?(@board,input) && input.between?(0,8)
 end
 
+def position_taken?(index)
+  if @board[index] == " " || @board[index] == "" || @board[index] == nil
+    false
+  else
+    return true
+  end
+end
+
 
 end
