@@ -26,5 +26,9 @@ def input_to_index(input)
   input.to_i - 1
 end
 
+def valid_move?(input)
+  !position_taken?(@board,input) && input.between?(0,8)
+end
+
 
 end
