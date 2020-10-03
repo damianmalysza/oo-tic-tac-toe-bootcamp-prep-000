@@ -60,4 +60,15 @@ def current_player
   end
 end
 
+def turn
+  puts "What is your move?"
+  input = input_to_index(gets.strip)
+  if valid_move?(input)
+    move(input,current_player(board))
+    display_board(board)
+  else
+    turn(board)
+  end
+end
+
 end
