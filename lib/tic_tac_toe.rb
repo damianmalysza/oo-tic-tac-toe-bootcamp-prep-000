@@ -64,10 +64,10 @@ def turn
   puts "What is your move?"
   input = input_to_index(gets.strip)
   if valid_move?(input)
-    move(input,current_player(board))
-    display_board(board)
+    move(input,current_player
+    display_board
   else
-    turn(board)
+    turn
   end
 end
 
